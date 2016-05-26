@@ -1,0 +1,48 @@
+$browser-prefixes: true !default;
+@import "juice";
+.container{
+	@include centerer;
+}
+h1{
+	text-align:center;
+	color:#307284;
+	a{
+		text-decoration: none;
+	}
+}
+input[type=text]{
+	display:block;
+	border-style:none none solid none;
+	border-width:.2em;
+	border-color:green;
+	text-align:center;
+	// width:30em;
+	height:1.4em;
+	font-size:1.2em;
+	line-height:1.4em;
+	margin-bottom:1em;
+	&:focus{
+		outline: none;
+	}
+	@include bp(large){
+		width:30em;
+	}
+	@include bp(small){
+		width:100%;
+	}
+}
+p{
+	text-align:center;
+	color:red;
+	font-weight:bold;
+	font-size:1.1em;
+}
+.credit{
+	@extend p;
+	color:blue;
+	a{
+		text-decoration: none;
+		color: blue;
+		font-variant: small-caps;
+	}
+}
