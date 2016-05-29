@@ -46,3 +46,10 @@ p{
 		font-variant: small-caps;
 	}
 }
+a.folkme{
+	@include show(large-only,inline-block);
+	position: fixed;
+	top:0;
+	left:0;
+	border:0;
+}
